@@ -11,9 +11,9 @@ class Admin extends CI_Controller
 
 		$data['page_title'] = 'Admin Panel | Home';
 
-		$this->load->view('admin_header', $data);
-		$this->load->view('admin_navbar');
-		$this->load->view('admin_main_content');
-		$this->load->view('admin_footer');
+		$this->load->view('admin/admin_header', $data);
+		$this->load->view('admin/admin_navbar');
+		$this->load->view('admin/admin_main_content');
+		$this->load->view('admin/admin_footer');
 	}
 }
