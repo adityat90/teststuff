@@ -5,7 +5,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="stylesheet/less" type="text/css" href="<?php echo base_url(); ?>less/bootstrap.less" > -->
-	<link rel="stylesheet/less" type="text/css" href="<?php echo base_url(); ?>less/custom.less" >
+	<!-- <link rel="stylesheet/less" type="text/css" href="<?php echo base_url(); ?>less/custom.less" > -->
+	<link rel="stylesheet/less" type="text/css" href="<?php echo base_url(); ?>less/admin.less" >
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet"type="text/css" href="<?php echo base_url(); ?>less/jquery.easy-pie-chart.css">
 </head>
 <body>

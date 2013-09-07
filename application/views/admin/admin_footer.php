@@ -36,13 +36,43 @@ destroyLessCache('/less/');
 <script type="text/javascript" src="<?php echo base_url(); ?>js/less-1.4.1.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
 <!-- <script type="text/javascript" src="<?php echo base_url(); ?>js/respond.js"></script> -->
+<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easy-pie-chart.js"></script>
 
 <script type="text/javascript">
-		$(document).ready(function()
-		{
-			// alert('Lol');
-		});
+        $(document).ready(function()
+        {
+            $('#students-count-chart').easyPieChart({
+                animate: 2000,
+                barColor: "#0f0",
+                trackColor: "#333",
+                scaleColor: false,
+                lineCap: "round",
+                lineWidth: "3",
+                size: $('#students-count-chart').parent().width()/2+""
+            });
+
+            $('#interviews-count-chart').easyPieChart({
+                animate: 2000,
+                barColor: "#0ff",
+                trackColor: "#333",
+                scaleColor: false,
+                lineCap: "round",
+                lineWidth: "3",
+                size: $('#interviews-count-chart').parent().width()/2+""
+            });
+
+            $('#companies-count-chart').easyPieChart({
+                animate: 2000,
+                barColor: "#f0f",
+                trackColor: "#333",
+                scaleColor: false,
+                lineCap: "round",
+                lineWidth: "3",
+                size: $('#companies-count-chart').parent().width()/2+""
+            });
+        });
 </script>
+
 
 </body>
 </html>

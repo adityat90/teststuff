@@ -1,7 +1,20 @@
 <div class="container">
 	<div class="row" id="content">
 		<div class="col-md-12">
-			<h1 id="welcome-heading">Welcome to the admin panel</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<h2 class="top-stats-headings"><a href="<?php echo site_url(); ?>/admin/students/">Students</a></h2>
+					<div id="students-count-chart" data-percent="100">60</div>
+				</div>
+				<div class="col-md-4">
+					<h2 class="top-stats-headings"><a href="<?php echo site_url(); ?>/admin/interviews/">Interviews</a></h2>
+					<div id="interviews-count-chart" data-percent="100">30</div>
+				</div>
+				<div class="col-md-4">
+					<h2 class="top-stats-headings"><a href="<?php echo site_url(); ?>/admin/companies/">Companies</a></h2>
+					<div id="companies-count-chart" data-percent="100">5</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

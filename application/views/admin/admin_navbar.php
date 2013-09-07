@@ -11,25 +11,15 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<?php if($this->ion_auth->user()->row() != false) : ?>
-					<li><a href="<?php echo site_url(); ?>/companies/">Companies</a></li>
-					<?php if($this->ion_auth->in_group('admin')) : ?>
-							<li><button class="btn btn-success navbar-btn" onclick="location.href='<?php echo site_url()."/admin/"; ?>';">Admin Dashboard</button></li>
-					<?php endif; ?>
+					<li><a href="<?php echo site_url(); ?>/admin">Admin Home</a></li>
+					<li><a href="<?php echo site_url(); ?>/admin/students/">Students</a></li>
+					<li><a href="<?php echo site_url(); ?>/admin/companies/">Companies</a></li>
+					<li><a href="<?php echo site_url(); ?>/admin/interviews/">Interviews</a></li>
 				<?php endif; ?>
 			</ul>
 
 			<?php if($this->ion_auth->user()->row() != false) : ?>
-
-			<?php
-			$attributes = array('class' => 'navbar-form navbar-left');
-
-			echo form_open('companies/search/', $attributes);
-			?>
-				<div class="form-group">
-					<input type="text" class="form-control" name="company_name" id="company_name" placeholder="Search by company">
-				</div>
-			</form>
-
+			
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo site_url(); ?>/login/logout"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
 			</ul>
